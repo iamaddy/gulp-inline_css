@@ -1,0 +1,54 @@
+{
+  "name": "gulp-inline_css",
+  "version": "1.0.3",
+  "description": "Inline remote or local linked css in an html file",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iamaddy/gulp-inline_css"
+  },
+  "keywords": [
+    "gulpplugin",
+    "inline",
+    "css", 
+    "html"
+  ],
+  "author": {
+    "name": "addy"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamaddy/gulp-inline_css/issues"
+  },
+  "homepage": "https://github.com/iamaddy/gulp-inline_css",
+  "dependencies": {
+    "gulp-util": "^3.0.0",
+    "through2": "^0.6.1",
+    "bluebird": "^2.9.25",
+    "cheerio": "^0.19.0",
+    "extract-css": "^1.0.0",
+    "batch": "^0.5.2",
+    "href-content": "^1.0.0",
+    "list-stylesheets": "^1.0.0",
+    "style-data": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jscs": "^3.0.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-mocha": "^2.0.0",
+    "gulp-util": "^3.0.0",
+    "mocha": "*",
+    "should": "^4.6.0"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "_id": "gulp-inline_css@1.0.2",
+  "dist": {
+    "shasum": "7b950e682889970778e210d74879cd0af18846ae"
+  },
+  "_from": "gulp-inline_css@",
+  "_resolved": "https://registry.npmjs.org/gulp-inline_css/-/gulp-inline_css-1.0.2.tgz"
+}
