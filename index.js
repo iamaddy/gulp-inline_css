@@ -6,6 +6,12 @@ var gutil = require('gulp-util'),
 
 module.exports = function (opt) {
     return through.obj(function (file, enc, cb) {
+        opt = {             
+            applyStyleTags: true,
+            applyLinkTags: true,
+            removeStyleTags: true,
+            removeLinkTags: false
+        };
         var _opt = JSON.parse(JSON.stringify(opt || {}));
 
         // 'url' option is required

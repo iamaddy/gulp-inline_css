@@ -1,6 +1,6 @@
 {
   "name": "gulp-inline_css",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Inline remote or local linked css in an html file",
   "main": "index.js",
   "scripts": {
