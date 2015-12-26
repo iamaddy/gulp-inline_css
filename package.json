@@ -1,6 +1,6 @@
 {
   "name": "gulp-inline_css",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Inline remote or local linked css in an html file",
   "main": "index.js",
   "scripts": {
@@ -45,10 +45,10 @@
   },
   "readme": "",
   "readmeFilename": "README.md",
-  "_id": "gulp-inline_css@1.0.2",
+  "_id": "gulp-inline_css@1.0.4",
   "dist": {
     "shasum": "7b950e682889970778e210d74879cd0af18846ae"
   },
   "_from": "gulp-inline_css@",
-  "_resolved": "https://registry.npmjs.org/gulp-inline_css/-/gulp-inline_css-1.0.2.tgz"
+  "_resolved": "https://registry.npmjs.org/gulp-inline_css/-/gulp-inline_css-1.0.4.tgz"
 }
