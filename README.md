@@ -1,11 +1,13 @@
 ## How It Works
 This gulp plugin takes an html file and inlines the CSS into the html.
 
-file.html:
+**file.html:**
 ```
 <html>
 <head> 
-  <link rel="stylesheet" href="//xxx.com/style.css?__inline">
+  <link rel="stylesheet" href="./css/reset.css?__inline">
+  <link rel="stylesheet" href="./css/a.css">
+  <link rel="stylesheet" href="//xxx.com/css/style.css?__inline">
 </head>
 <body>
   <p>Test</p>
@@ -15,20 +17,40 @@ file.html:
 
 link must with the flag '?__inline'.
 
-//xxx.com/style.css:
+**./css/reset.css:**
+```
+a {
+  color: blue;
+  background-image: url(../img/test.png);
+}
+```
+
+
+**//xxx.com/css/style.css:**
 ```
 p {
   color: red;
+  background-image: url(../img/bg.png);
 }
 ```
-Output:
+
+
+**Output:**
 ```
 <html>
 <head>
 </head>
 <style type="text/css">
-    p {
+  a {
+    color: red;
+    background-image: url(../img/test.png);
+  }
+</style>
+<link rel="stylesheet" href="./css/a.css">
+<style type="text/css">
+  p {
   color: red;
+  background-image: url(//xxx.com/img/bg.png);
 }
 </style>
 <body>
@@ -37,6 +59,7 @@ Output:
 </html>
 
 ```
+
 ## Install
 ```
 npm install --save-dev gulp-inline_css
